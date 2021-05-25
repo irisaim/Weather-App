@@ -1,0 +1,151 @@
+
+body {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: url('https://pbs.twimg.com/media/Dvb1w0bWsAYvBhF.jpg');
+	background-repeat: no-repeat;
+    background-size: cover;
+	}
+
+header {
+	display: flex;
+}
+#earth {
+		width: 200px;
+		height: 200px;
+		background: url('https://web.archive.org/web/20150807125159if_/http://www.noirextreme.com/digital/Earth-Color4096.jpg');
+		border-radius: 50%;
+		background-size: 650px;
+		box-shadow: inset 16px 0 40px 3px black;
+		animation-name: rotate;
+		animation-duration: 60s;
+		animation-iteration-count: infinite;
+		animation-timing-function: linear;
+		-webkit-animation-name: rotate;
+		   -webkit-animation-duration: 12s;
+		   -webkit-animation-iteration-count: infinite;
+		   -webkit-animation-timing-function: linear;
+	  }
+
+	  @keyframes rotate {
+		from { background-position:  100%  0; }
+		to {   background-position:    0   0; }
+	  }
+
+.title {
+	width: 600px;
+	margin-top: 50px;
+	margin-left:400px;
+	font-size: 50px;
+}
+
+#city {
+	margin:20px 20px;
+	padding: 10px 30px;
+    border: 0px solid;
+	border-radius: 15px;;
+    box-sizing: border-box;
+    background: beige;
+    border-bottom: lightgrey 1.5px solid;
+    overflow: hidden;
+    outline: none;
+    color: black;
+    box-shadow: 0 0 10px 4px grey;
+    transition: 0.5s;
+}
+
+#now-btn {
+    border: 0;
+    color: black;
+    font-size: 15px;
+    background:beige;
+    text-align: center;
+    padding: 10px 7px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+    width: 15%;
+}
+
+#prognozaBtn {
+    border: 0;
+    color: black;
+    font-size: 15px;
+    background:beige;
+    text-align: center;
+    padding: 10px 7px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+    width: 15%;
+}
+
+#city-input {
+margin: 5px 350px;
+}
+
+#city-input i {
+		position: relative;
+	    right: 50px;
+		top: 5px;
+		font-size: 21px;
+		color: black;
+		pointer-events: none;
+	  }
+	  .input-wrap > input:focus {
+		padding: 9px 20px;
+		width: 225px;
+	  }
+	  .input-wrap > input:focus + i.fas {
+		display: none;
+	  }
+	  
+#weather-now {
+	display: none;
+    margin: auto;
+    margin-top: 1px;
+    padding: 26px 18px;
+    width: 130px;
+    height:330px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 20px rgba(0, 0, 0, .2);
+}
+
+.card {
+	border-radius: 9px;
+	font-size: 15px;
+	flex-wrap: wrap;
+}
+
+#prognozaDiv {
+    padding: 1.5rem;
+    border-radius: 16px;
+    color: black;
+    display: grid;
+	grid-template-columns: 1fr, 1fr, 1fr, 1fr, 1fr, 1fr;
+	transition: .2s;
+    margin: 0;
+}
+
+.prognozaBox {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.prognozaHours {
+	margin: auto;
+    margin-top: 5%;
+    padding: 20px;
+    width: 100px;
+    height:300px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 20px rgba(0, 0, 0, .2);
+	display: grid;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	border: 1px solid beige;
+} 
+
+#cityInputError {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 40px;
+    color:red;
+}

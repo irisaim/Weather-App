@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel ="stylesheet" href="style.css">
+    <title>Wheather App</title>
+</head>
+<body>
+    <header>
+   <hi class="title">Weather Forecast</hi>
+   <div id="earth"></div>
+</header>
+    <div id="city-input">
+        <!-- <label for="city"><strong><i class="fas fa-search"></i></strong></label> -->
+        <input id="city" type="text" placeholder="Add city here" value="" />
+        <i class="fas fa-map-marker-alt"></i>
+        <button id="now-btn">Today</button>
+        <button id="prognozaBtn">Next days</button>
+        <div id="cityInputError"></div>
+    </div>
+    <div id="weather-now"></div>
+    <div id="prognozaDiv"></div>
+<script src="app.js"></script>   
+ 
+</body>
+</html>
+
